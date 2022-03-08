@@ -27,7 +27,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 const srvr = process.env.MONGO_CRED;
-mongoose.connect("mongodb+srv://"+`${srvr}`+"@cluster0.rfp7p.mongodb.net/userDB");
+console.log("MONGO CREDENTIALS ARE"+process.env.MONGO_CRED);
+mongoose.connect("mongodb+srv://"+srvr+"@cluster0.rfp7p.mongodb.net/userDB");
 
 const userSchema= new mongoose.Schema({
   email:String,
