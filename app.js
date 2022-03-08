@@ -30,7 +30,7 @@ const srvr = process.env.N1_KEY;
 const srvrCred = process.env.N1_SECRET;
 
 console.log("MONGO CREDENTIALS ARE"+srvr+"and"+srvrCred);
-mongoose.connect("mongodb+srv://admin-meh:"+process.env.N1_SECRET+"@cluster0.rfp7p.mongodb.net/userDB");
+mongoose.connect("mongodb+srv://admin-meh:xfyuqfHXQps97z6@cluster0.rfp7p.mongodb.net/userDB");
 
 const userSchema= new mongoose.Schema({
   email:String,
